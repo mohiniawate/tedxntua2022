@@ -4,7 +4,6 @@ from .env import abs_path, env_setting
 #import os
 
 #SECRET_KEY = "iit*qlpw9b71els9)14mhsk@i3t1_u6x!hv2c5!-x7^r1&^n6p"
-
 # Set ALLOWED_HOSTS to the specific domains your application will serve
 ALLOWED_HOSTS = env_setting('DJANGO_ALLOWED_HOSTS', 'localhost').split(',')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
