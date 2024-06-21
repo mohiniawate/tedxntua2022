@@ -1,14 +1,9 @@
 '''Configuration for production mode'''
 from .base import *  # pylint: disable=wildcard-import
 from .env import abs_path, env_setting
-from decouple import config
+import os
 
-SECRET_KEY = config('DJANGO_SECRET_KEY', default=None)
-
-if SECRET_KEY is None:
-    raise ValueError("The SECRET_KEY setting must not be empty")
-
-print(f"SECRET_KEY is: {SECRET_KEY}")
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 
 # Set ALLOWED_HOSTS to the specific domains your application will serve
 ALLOWED_HOSTS = env_setting('DJANGO_ALLOWED_HOSTS', 'localhost').split(',')
