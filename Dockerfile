@@ -16,6 +16,7 @@ WORKDIR /app
 
 # Copy the requirements file
 COPY requirements.txt /app/
+COPY .env /app/
 
 RUN apk --no-cache add mysql-dev gcc
 
