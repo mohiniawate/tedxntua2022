@@ -6,6 +6,7 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 ENV DJANGO_SECRET_KEY ='p_21kwe$!j8(hp4kyujqj+c3martmpvm#@yf&@#f-3(*=oe1go'
 
+
 RUN apk update \
     && apk add --no-cache mariadb-connector-c-dev build-base mariadb-dev
     
