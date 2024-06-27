@@ -12,6 +12,17 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Ensure DEBUG is set to False for production
 DEBUG = False
 
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'cards',
+
+]
+
 # Add logging to file in production mode
 LOGGING['handlers']['file'] = {
     'level': env_setting('LOG_LEVEL', 'INFO'),
