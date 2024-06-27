@@ -33,13 +33,3 @@ WEBPACK_LOADER = {
     }
 }
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'tedexdb',
-        'USER': 'admin',
-        'PASSWORD': 'test1234',
-        'HOST': 'db',  # Replace with correct hostname or IP
-        'PORT': '3306',
-    }
-}
