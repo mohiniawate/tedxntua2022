@@ -21,6 +21,6 @@ spec:
         - containerPort: 8000
         env:
         - name: DATABASE_URL
-          value: "mysql://admin:test1234@hostname:3306/tedexdb"  # Replace with your actual database URL
+          value: "mysql://admin:test1234@tedexdb.cxg84s662tyk.us-east-2.rds.amazonaws.com:3306/tedexdb"  # Replace with your actual database URL
         - name: DJANGO_SETTINGS_MODULE
           value: "project.settings"  # Replace with your actual settings module
