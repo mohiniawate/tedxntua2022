@@ -23,4 +23,4 @@ spec:
         - name: DATABASE_URL
           value: "mysql://admin:test1234@hostname:3306/tedexdb"  # Replace with your actual database URL
         - name: DJANGO_SETTINGS_MODULE
-          value: "tedxntua2022.settings"  # Replace with your actual settings module
+          value: "project.settings"  # Replace with your actual settings module
