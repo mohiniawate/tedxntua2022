@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: django-app
+  labels:
+    app: django-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: django-app
+  template:
+    metadata:
+      labels:
+        app: django-app
+    spec:
+      containers:
+      - name: django-app
+        image: 730335380624.dkr.ecr.us-east-2.amazonaws.com/tedex-repo:latest
+        ports:
+        - containerPort: 8000
+        env:
+        - name: DATABASE_URL
+          value: "mysql://admin:test1234@hostname:3306/tedexdb"  # Replace with your actual database URL
+        - name: DJANGO_SETTINGS_MODULE
+          value: "tedxntua2022.settings"  # Replace with your actual settings module
