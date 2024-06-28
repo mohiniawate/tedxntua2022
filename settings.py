@@ -28,7 +28,7 @@ STATICFILES_DIRS += (
 
 WEBPACK_LOADER = {
     'DEFAULT': {
-        'BUNDLE_DIR_NAME': 'bundles/dist/',
+        'BUNDLE_DIR_NAME': '/',
         'STATS_FILE': abs_path('bundles','webpack-stats.prod.json'),
     }
 }
