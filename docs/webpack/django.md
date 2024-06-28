@@ -73,7 +73,7 @@ WEBPACK_LOADER = {
     'DEFAULT': {
         # Webpack outputs bundles in bundles/dist/ when in production mode.
         'BUNDLE_DIR_NAME': '/',
-        'STATS_FILE': abs_path('bundles', 'webpack-stats.prod.json')
+        'STATS_FILE': abs_path('..', 'webpack.prod.conf.js', 'webpack-stats.prod.json')
     }
 }
 ```
