@@ -15,7 +15,7 @@ metadata:
     alb.ingress.kubernetes.io/group.name: 'django-external'
 spec:
   rules:
-    - host: tedex.pratibhakokil.co.in
+    - host: tedex.malaniprovision.live
       http:
         paths:
           - path: /
