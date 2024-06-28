@@ -19,7 +19,7 @@ DEFAULT_CONFIG = {
     'DEFAULT': {
         'CACHE': not DEBUG,
         'BUNDLE_DIR_NAME': 'webpack_bundles/',
-        'STATS_FILE': 'webpack-stats.json',
+        'STATS_FILE': 'webpack-stats.prod.json',
         'POLL_INTERVAL': 0.1,
         'TIMEOUT': None,
         'IGNORE': [r'.+\.hot-update.js', r'.+\.map']
